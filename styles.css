@@ -17,7 +17,7 @@ body {
   background-color: #fffbf7;
 }
 
-h1 {
+.title {
   color: #025157;
   font-family: "Alegreya", serif;
   font-size: 6rem;
@@ -25,7 +25,7 @@ h1 {
   margin-block-end: 2.4rem;
 }
 
-h4 {
+.subtitle {
   color: #46484c;
   font-family: "Slabo 27px", serif;
   font-size: 2rem;
@@ -33,11 +33,11 @@ h4 {
   font-weight: 500;
 }
 
-form {
+.form {
   height: 5.5rem;
 }
 
-input {
+.form__input {
   border: 1px solid #b6b6b6;
   padding: 6px 20px;
   width: 60%;
@@ -45,11 +45,11 @@ input {
   border-radius: 8px 0 0 8px;
 }
 
-input::placeholder {
+.form__input::placeholder {
   font-size: 1.6rem;
 }
 
-input, .form__button {
+.form__input, .form__button {
   height: 100%;
 }
 
