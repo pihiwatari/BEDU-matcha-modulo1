@@ -5,36 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matcha</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;900&family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <header class="header" role="tab">
+      <a href="#" class="header__home-link">
+        <img
+          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+          alt="matcha logo"
+          class="home-link__logo"
+        />
+      </a>
+      <nav class="header__navbar">
+        <ul class="navbar__link-list">
+          <li class="link-list__item"><a href="#">Platform</a></li>
+          <li class="link-list__item"><a href="#">Pricing</a></li>
+          <li class="link-list__item"><a href="#">Customers</a></li>
+          <li class="link-list__item"><a href="#">Resources</a></li>
+          <li class="link-list__item"><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__signin-container">
+        <a href="#">Sign In</a>
+        <button>Start free trial</button>
+      </div>
+    </header>
+    <section class="main">
+      <h1 class="main__title">Build your blog. Build your business.</h1>
 
-    <h1 class="title">Build your blog. Build your business.</h1>
+      <h4 class="main__subtitle">
+        Instantly publish articles, drive more traffic, grow your email list,
+        and see your blog’s impact on sales.
+      </h4>
 
-    <h4 class="subtitle">
-      Instantly publish articles, drive more traffic, grow your email list, and
-      see your blog’s impact on sales.
-    </h4>
+      <form action="" class="main__form" role="tab">
+        <input
+          type="email"
+          class="form__input"
+          placeholder="Enter email address"
+        />
+        <button type="submit" class="form__button">Try it now &rarr;</button>
+      </form>
 
-    <form action="" class="form">
-      <input type="email" class="form__input" placeholder="Enter email address"/>
-      <button type="submit" class="form__button">Try it now &rarr;</button>
-    </form>
-
-    <p class="promotional-text">Start publishing today with a <strong>free 7-day trial.</strong></p>
-    <p class="promotional-text"><strong>No credit card</strong> required.</p>
-
-    <img
-      src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png"
-      alt=""
-      Capterra
-      logo
-    />
-
-    <img
-      src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
-      alt="Capterra screen examples"
-      width="400px"
-    />
+      <p class="main__promotional-text">
+        Start publishing today with a
+        <strong>free 7-day trial.</strong>
+        <br />
+        <strong>No credit card </strong>
+        required.
+      </p>
+      <figure class="main__banner">
+        <img
+          src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png"
+          alt="Capterra
+      logo"
+          class=""
+        />
+      </figure>
+      <figure class="main__banner">
+        <img
+          src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
+          alt="Capterra screen examples"
+          class="banner__image--large"
+        />
+      </figure>
+    </section>
   </body>
 </html>
