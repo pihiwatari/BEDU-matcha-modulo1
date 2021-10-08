@@ -37,28 +37,28 @@ a {
   background-color: #fffbf7;
 }
 
-.navbar__link-list {
+.navbar .link-list {
   display: flex;
   color: #025157;
 }
 
-.navbar__signin-container {
+.navbar .signin {
   height: 100%;
 }
 
-.navbar__signin-container a,
+.signin a,
 button {
   margin: 0 1rem;
   text-align: right;
 }
 
-.navbar__signin-container a {
+.signin a {
   color: #67b54b;
   font-size: 1.4rem;
   font-weight: 600;
 }
 
-.navbar__signin-container button {
+.signin button {
   font-family: "Open Sans", sans-serif;
   height: 100%;
   padding: 1.2rem 1.4rem;
@@ -74,7 +74,7 @@ button {
   text-align: center;
 }
 
-.main__title {
+.title {
   color: #025157;
   font-family: "Alegreya", serif;
   font-size: 6rem;
@@ -82,7 +82,7 @@ button {
   margin-block-end: 2.4rem;
 }
 
-.main__subtitle {
+.subtitle {
   color: #46484c;
   font-family: "Slabo 27px", serif;
   font-size: 2rem;
@@ -90,11 +90,11 @@ button {
   font-weight: 500;
 }
 
-.main__form {
+.form {
   height: 5.5rem;
 }
 
-.form__input {
+.form .input {
   border: 1px solid #b6b6b6;
   padding: 6px 20px;
   width: 60%;
@@ -102,16 +102,16 @@ button {
   border-radius: 8px 0 0 8px;
 }
 
-.form__input::placeholder {
+.form .input::placeholder {
   font-size: 1.6rem;
 }
 
-.form__input,
-.form__button {
+.form .input,
+.form .button {
   height: 100%;
 }
 
-.form__button {
+.form .button {
   border: none;
   outline: none;
   margin: -1rem;
@@ -121,17 +121,84 @@ button {
   border-radius: 0 8px 8px 0;
 }
 
-.main__promotional-text {
+.promotional-text {
   font-size: 1.6rem;
   color: #8b8b8bcc;
   margin-block-start: 15px;
 }
 
-.main__banner {
+.main .banner {
   margin-block-start: 3rem;
   margin-block-end: 1.6rem;
 }
 
-.banner__image--large {
+.banner .image--large {
   width: 70%;
+}
+
+/* second section */
+
+.advertising {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 10rem auto;
+}
+
+.advertising .ad-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.ad-video img {
+  width: 120px;
+  margin-block-start: 1rem;
+}
+
+.subscribe-form {
+  /* width: 40%;
+  margin-left: 10rem; */
+  flex: 1;
+}
+
+.subscribe-form .title {
+  font-size: 4rem;
+}
+
+.subscribe-form .description {
+  margin-bottom: 1rem;
+  line-height: 2.4rem;
+}
+
+.subscribe-form .tagline {
+  color: #b6b6b6;
+  margin-block-end: 1rem;
+}
+
+.subscribe-form .form {
+  margin-block-start: 2rem;
+}
+
+/* third section */
+
+.features {
+  display: grid;
+  grid-template: repeat(2, 33rem) / repeat(2, 1fr);
+  background-color: #025157;
+  place-items: center;
+  padding: 5% 10%;
+}
+
+.features .card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fffbf7;
+}
+
+.card-content .icon {
+  width: 50px;
 }
