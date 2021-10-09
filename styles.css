@@ -338,3 +338,7 @@ a {
   height: 0.3rem;
   background-color: #fffbf7;
 }
+
+.slider-controls span:hover {
+  cursor: pointer;
+}
