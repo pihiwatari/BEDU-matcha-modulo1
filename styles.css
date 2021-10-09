@@ -334,9 +334,15 @@ a {
 
 .slider-controls span {
   display: inline-block;
-  width: 3rem;
-  height: 0.3rem;
-  background-color: #fffbf7;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #025157;
+}
+
+.slider-controls span:nth-child(1) {
+  border: none;
+  background-color: #025157;
 }
 
 .slider-controls span:hover {
