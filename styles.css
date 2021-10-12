@@ -190,20 +190,60 @@ a {
 .features {
   display: grid;
   grid-template: repeat(2, 33rem) / repeat(2, 1fr);
-  background-color: #025157;
-  place-items: center;
+  row-gap: 3rem;
+  column-gap: 3rem;
   padding: 5% 10%;
+  background-color: #025157;
 }
 
-.features .card {
+.features .feature-card {
   display: flex;
+  flex: 2;
   align-items: center;
   overflow: hidden;
+  border-radius: 0.5rem;
   background-color: #fffbf7;
 }
 
-.card-content .icon {
+.feature-card .feature-card-content {
+  padding: 3rem 2rem;
+}
+
+.feature-card-content .icon {
   width: 50px;
+}
+.feature-card-content h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.feature-card-content p {
+  margin-inline-end: 3rem;
+  margin-block-end: 3rem;
+  line-height: 2.4rem;
+  color: #7e7e7e;
+}
+
+.feature-card-content a {
+  color: #67b54b;
+  font-weight: 600;
+}
+
+/*card right image*/
+
+.feature-card .right-image {
+  position: relative;
+  height: 80%;
+  width: 40%;
+}
+
+.right-image figure {
+  height: 100%;
+}
+
+.right-image figure img {
+  height: 100%;
 }
 
 /* fourth section */
