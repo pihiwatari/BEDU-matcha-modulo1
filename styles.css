@@ -26,6 +26,7 @@ a {
 
 .header {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -205,16 +206,6 @@ a {
   background-color: #fffbf7;
 }
 
-/*ANIMATION*/
-.feature-card:hover .right-image {
-  transition-duration: 500ms;
-  transition-property: all;
-  opacity: 0;
-  width: 0;
-}
-
-/*END OF ANIMATION*/
-
 .feature-card .feature-card-content {
   padding: 3rem 2rem;
 }
@@ -243,9 +234,12 @@ a {
 /*card right image*/
 
 .feature-card .right-image {
+  transition-duration: 500ms;
+  transition-property: all;
   position: relative;
   height: 80%;
   width: 40%;
+  right: -50px;
 }
 
 .right-image figure {
@@ -255,6 +249,16 @@ a {
 .right-image figure img {
   height: 100%;
 }
+
+/*ANIMATION*/
+.feature-card:hover .right-image {
+  transition-duration: 500ms;
+  transition-property: all;
+  /* opacity: 0; */
+  right: 0;
+}
+
+/*END OF ANIMATION*/
 
 /* fourth section */
 
@@ -401,7 +405,7 @@ a {
 
 /*fifth section*/
 .how-it-works {
-  padding: 5% 15%;
+  padding: 5% 10%;
   text-align: center;
 }
 
@@ -409,7 +413,7 @@ a {
   font-size: 5rem;
 }
 
-.how-it-works p {
+.how-it-works .work-description {
   max-width: 60%;
   margin: 0 auto;
   font-size: 1.8rem;
@@ -431,14 +435,20 @@ a {
 /*fifth section cards*/
 
 .how-it-works .benefits-grid {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 6rem;
 }
 
 .benefits-grid .benefits-card-item {
+  margin: 0 2rem;
+  border-radius: 0.5rem;
   background-color: #fff;
-  border: 1px solid #7e7e7e;
+  border: 1px solid #dadada;
+}
+
+.benefits-card-item .card-image-container {
+  position: relative;
 }
 
 .benefits-card-item .card-item-image {
@@ -447,4 +457,35 @@ a {
 }
 
 .benefits-card-item .card-item-icon {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 20px;
+}
+
+.benefits-card-item .card-item-body {
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.card-item-body h3 {
+  text-align: center;
+  font-family: "Alegreya", serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #025157;
+}
+
+.card-item-body p {
+  margin: 1.6rem 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #46484c;
+}
+
+.card-item-body a {
+  line-height: 1.4;
+  font-weight: 600;
+  color: #67b54b;
 }
