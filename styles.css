@@ -173,7 +173,7 @@ a {
 
 .subscribe-form .description {
   margin-bottom: 1rem;
-  line-height: 2.4rem;
+  line-height: 1.5;
 }
 
 .subscribe-form .tagline {
@@ -205,6 +205,16 @@ a {
   background-color: #fffbf7;
 }
 
+/*ANIMATION*/
+.feature-card:hover .right-image {
+  transition-duration: 500ms;
+  transition-property: all;
+  opacity: 0;
+  width: 0;
+}
+
+/*END OF ANIMATION*/
+
 .feature-card .feature-card-content {
   padding: 3rem 2rem;
 }
@@ -221,7 +231,7 @@ a {
 .feature-card-content p {
   margin-inline-end: 3rem;
   margin-block-end: 3rem;
-  line-height: 2.4rem;
+  line-height: 1.5;
   color: #7e7e7e;
 }
 
@@ -269,7 +279,7 @@ a {
 .story p {
   margin: 2rem 0;
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 1.5;
 }
 
 .story .button {
@@ -387,4 +397,54 @@ a {
 
 .slider-controls span:hover {
   cursor: pointer;
+}
+
+/*fifth section*/
+.how-it-works {
+  padding: 5% 15%;
+  text-align: center;
+}
+
+.how-it-works .title {
+  font-size: 5rem;
+}
+
+.how-it-works p {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.how-it-works p a {
+  color: #67b54b;
+}
+
+.how-it-works button {
+  height: 4.5rem;
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+/*fifth section cards*/
+
+.how-it-works .benefits-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.benefits-grid .benefits-card-item {
+  background-color: #fff;
+  border: 1px solid #7e7e7e;
+}
+
+.benefits-card-item .card-item-image {
+  width: 100%;
+  height: 100%;
+}
+
+.benefits-card-item .card-item-icon {
 }
