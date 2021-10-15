@@ -489,3 +489,125 @@ a {
   font-weight: 600;
   color: #67b54b;
 }
+
+/* media queries*/
+
+@media (max-width: 425px) {
+  .navbar,
+  .signin {
+    display: none;
+  }
+
+  .main {
+    margin-block-start: 12rem;
+  }
+
+  .main .title {
+    font-size: 3rem;
+  }
+
+  .main .banner img {
+    width: 80%;
+  }
+
+  /* SECOND SECTION ADVERTISING */
+
+  .advertising {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .advertising .ad-video {
+    margin-block-end: 4rem;
+  }
+
+  .advertising .ad-video video {
+    width: 80%;
+  }
+
+  .subscribe-form .title {
+    font-size: 3rem;
+  }
+
+  /* THIRD SECTION FEATURE CARDS */
+
+  .features {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 5%;
+  }
+
+  .feature-card {
+    flex-direction: column;
+  }
+
+  .feature-card .feature-card-content {
+    padding: 3rem 2rem 2rem 4rem;
+  }
+
+  .feature-card .right-image {
+    display: none;
+  }
+
+  /* FOURTH SECTION SUCCESS STORIES */
+
+  .success-stories {
+    flex-direction: column;
+    padding: 10% 5%;
+  }
+
+  .success-stories .story {
+    padding: 0;
+  }
+
+  .story .title {
+    font-size: 2.5rem;
+  }
+
+  .card-image img {
+    max-height: initial;
+  }
+
+  /* FIFTH SECTION HOW IT WORKS? */
+
+  .how-it-works {
+    padding: 10% 5%;
+  }
+
+  .how-it-works .title {
+    font-size: 3rem;
+  }
+
+  .how-it-works .work-description {
+    max-width: initial;
+  }
+
+  .how-it-works .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid .benefits-card-item {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .benefits-card-item .card-image-container {
+    position: unset;
+  }
+
+  .card-image-container .card-item-image {
+    vertical-align: middle;
+  }
+
+  .card-image-container .card-item-icon {
+    width: 2.1rem;
+  }
+
+  .card-item-body h3 {
+    margin-block-start: 3rem;
+    text-align: left;
+  }
+}
