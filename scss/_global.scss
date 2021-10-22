@@ -1,0 +1,25 @@
+//color variables
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$green-text: #67b54b;
+$gray: #979797;
+$dark-gray: #4a4a4a;
+$white: #fff;
+
+//font variables
+$title-size: 32px;
+$title-weight: 900;
+
+//buttons
+
+//fonts
+$font-title: "Alegreya", serif;
+$promotional-text: "Slabo 27px", serif;
+
+//placeholders
+%base-title {
+  font-family: $font-title;
+  font-size: $title-size;
+  font-weight: $title-weight;
+  color: $dark-green-text;
+}
