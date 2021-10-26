@@ -8,6 +8,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <title>Matcha</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,29 +21,73 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles_bootstrap.css" />
+    <link rel="stylesheet" href="./output.css" />
   </head>
   <body>
-    <header class="header" role="tab">
-      <a href="#" class="header__home-link">
-        <img
-          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
-          alt="matcha logo"
-          class="home-link__logo"
-        />
-      </a>
-      <nav class="navbar">
-        <ul class="link-list">
-          <li class="item"><a href="#">Platform</a></li>
-          <li class="item"><a href="#">Pricing</a></li>
-          <li class="item"><a href="#">Customers</a></li>
-          <li class="item"><a href="#">Resources</a></li>
-          <li class="item"><a href="#">About</a></li>
-        </ul>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+              alt=""
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./platform.html"
+                  >Platform</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Customers</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Resources</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex align-items-center signin">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Sign In</a
+              >
+              <button class="btn btn-outline-success" type="submit">
+                Start Free Trial
+              </button>
+            </form>
+          </div>
+        </div>
       </nav>
-      <div class="signin">
-        <a href="#">Sign In</a>
-        <button>Start free trial</button>
-      </div>
     </header>
     <!-- FIRST SECTION -->
     <section class="main">
@@ -216,64 +266,170 @@
         </div>
       </article>
     </section>
-    <!-- FOURTH SECTION -->
-    <section class="success-stories">
-      <article class="story">
-        <h3 class="title">Growing ecommerce brands rely on Matcha.</h3>
-        <p>
-          Are you tired of wasting time publishing blog articles to only see a
-          trickle of traffic and no impact on sales? Join hundreds of business
-          owners and ecommerce marketers who rely on Matcha for quality content
-          and consistent performance from their blogs.
-        </p>
-        <button class="button">Who Uses Matcha?</button>
-        <figure class="brands-container">
-          <img
-            src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png"
-            alt="brands"
-            class="brands"
-          />
-        </figure>
-      </article>
-      <article class="case-study">
-        <div class="card">
-          <figure class="card-image">
-            <img
-              src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-              alt="happy dude"
-            />
-            <div class="everly-logo-container">
+
+    <!-- FOURTH SECTION BOOTSTRAP -->
+    <section class="card-container">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-lg-8 col-md-8 right-padding">
+            <h2 class="title">Growing ecommerce brands rely on Matcha.</h2>
+            <p>
+              You know it's true: ecommerce businesses succeed when they
+              meaningfully connect with their customers across all channels. The
+              catch? Creating content that fuels that connection takes a lot of
+              time. Time you probably don't have. Until now. Join hundreds of
+              ecommerce marketers who rely on Matcha for reader conversion
+              tools, content analytics, and quality articles to fuel their
+              customer engagement channels and see consistent performance from
+              their blogs.
+            </p>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="btn btn-beefy button">Who uses Matcha?</a>
               <img
-                src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                alt="everly-logo"
+                src="https://getmatcha.com/wp-content/uploads/2020/04/logos-matcha.png"
+                alt="logos"
               />
             </div>
-          </figure>
-          <div class="card-body">
-            <h4 class="card-title">Everly</h4>
-            <p class="card-description">
-              Early-Stage CPG Brand Increases Lead Conversion 20x, Ecommerce
-              Revenue 20%
-            </p>
-            <div class="card-results">
-              <figure>
-                <img
-                  src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png"
-                  alt="shopping cart"
-                />
-              </figure>
-              <p>22% of monthly revenue influenced by content</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                      class="card-img-top"
+                      alt="happy man"
+                    />
+                    <div class="card-body">
+                      <h4>Everly</h4>
+                      <h3>
+                        Early-Stage CPG Brand Increases Lead Conversion 20x,
+                        Ecommerce Revenue 20%
+                      </h3>
+                      <div class="results">
+                        <img
+                          src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png"
+                          alt="Cart icon"
+                        />
+                        <p>22% of monthly revenue influenced by content</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button class="button">See Case Study</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+                      class="card-img-top"
+                      alt="Sea to summit"
+                    />
+                    <div class="card-body">
+                      <h4>Sea to summit</h4>
+                      <h3>
+                        Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New
+                        Subscribers 820%
+                      </h3>
+                      <div class="results">
+                        <img
+                          src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png"
+                          alt="audiuence icon"
+                        />
+                        <p>22% of monthly revenue influenced by content</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button class="button">See Case Study</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+                      class="card-img-top"
+                      alt="happy man"
+                    />
+                    <div class="card-body">
+                      <h4>Mambe Waterproof Blankets</h4>
+                      <h3>
+                        How Mambe Increased Conversions by 327%, Reduced CPL by
+                        60%
+                      </h3>
+                      <div class="results">
+                        <img
+                          src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png"
+                          alt="target icon"
+                        />
+                        <p>+327% more popup conversions at a 60% lower cost</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button class="button">See Case Study</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <button class="button">See case study</button>
           </div>
         </div>
-        <div class="slider-controls">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </article>
+      </div>
     </section>
+    <!-- END OF FOURTH SECTION BOOTSTRAP -->
+
     <!-- FIFTH SECTION -->
     <section class="how-it-works">
       <h2 class="title">How does Matcha work?</h2>
@@ -375,102 +531,160 @@
         </article>
       </div>
     </section>
-    <section class="blog">
-      <div class="grid-container">
-        <div class="blog-features">
-          <h3>Learn how to grow your ecommerce business.</h3>
-          <div class="blog-feature-item">
-            <img
-              src="https://bedu-fef.netlify.app/icons/build.svg"
-              alt="build icon"
-            />
-            <div class="feature-description">
-              <h4>Build</h4>
-              <p>and scale your ecommerce store</p>
+
+    <!-- BLOG SECTION -->
+
+    <section class="container blog">
+      <div class="row">
+        <div class="col mb-5">
+          <h2 class="title">Learn how to grow your ecommerce business.</h2>
+          <article class="process-list">
+            <div class="process">
+              <div class="process-icon">
+                <img src="./images/build.svg" alt="Build icon" />
+              </div>
+              <div class="process-description">
+                <h3>Build</h3>
+                <p>and scale your ecommerce store</p>
+              </div>
             </div>
-          </div>
-          <div class="blog-feature-item">
-            <img
-              src="https://bedu-fef.netlify.app/icons/attract.svg"
-              alt="magnet icon"
-            />
-            <div class="feature-description">
-              <h4>Attract</h4>
-              <p>your target audience and grow site traffic</p>
+            <div class="process">
+              <div class="process-icon">
+                <img src="./images/attract.svg" alt="Attract icon" />
+              </div>
+              <div class="process-description">
+                <h3>Attract</h3>
+                <p>your target audience and grow site traffic</p>
+              </div>
             </div>
-          </div>
-          <div class="blog-feature-item">
-            <img
-              src="https://bedu-fef.netlify.app/icons/convert.svg"
-              alt="funnel icon"
-            />
-            <div class="feature-description">
-              <h4>Convert</h4>
-              <p>readers to suscribers and customers</p>
+            <div class="process">
+              <div class="process-icon">
+                <img src="./images/convert.svg" alt="Convert icon" />
+              </div>
+              <div class="process-description">
+                <h3>Convert</h3>
+                <p>readers to subscribers and customers</p>
+              </div>
             </div>
-          </div>
-          <a href="#" class="button">Read the blog</a>
+          </article>
+          <button>Read the blog</button>
         </div>
-        <article class="blog-article">
-          <!-- blog cards -->
-          <img
-            src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
-            alt="blog-image"
-          />
-          <div class="blog-article-body">
-            <h5>
-              Ecommerce Blogging: The 2020 Guide for Online Stores and DTC
-              Brands
-            </h5>
-            <div>
-              <strong>Performance Blogging</strong>
-              <strong>• 21 mins read</strong>
-            </div>
-            <p>
-              Table of Contents: Why E-commerce Businesses Need a Blog in 2020.
-              Document Your E-commerce Blog Strategy Publication: How to Create
-              High-Performing Blog Content Distribution...
-              <a href="#">+ Read More</a>
-            </p>
-            <div class="avatar-container">
-              <img
-                src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
-                alt="avatar"
-              />
-              <p>Shauna Ward</p>
-            </div>
-          </div>
-        </article>
-        <article class="blog-article">
-          <!-- blog cards -->
-          <img
-            src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
-            alt="blog-image"
-          />
-          <div class="blog-article-body">
-            <h5>
-              What Is Licensed Content and How Does It Help Your Business Grow?
-            </h5>
-            <div>
-              <strong>Performance Blogging</strong>
-              <strong>• 6 mins read</strong>
-            </div>
-            <p>
-              TL;DR: Licensed content, sometimes called syndicated content, is
-              content produced by a professional publisher that can be legally
-              licensed for...
-              <a href="#">+ Read More</a>
-            </p>
-            <div class="avatar-container">
-              <img
-                src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&d=retro&r=g"
-                alt="avatar"
-              />
-              <p>Rob Glover</p>
+        <div class="col mb-5">
+          <div class="card">
+            <img
+              src="./images/david-marcu-114194-1052x699.jpg"
+              class="card-img-top"
+              alt="blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Ecommerce Blogging: The 2020 Guide for Online Stores and DTC
+                Brands
+              </h5>
+              <div class="card-tags">
+                <strong class="category">Performance Blogging</strong>
+                <strong class="read-time"> • 21 mins read</strong>
+              </div>
+              <p class="card-text">
+                Table of Contents: Why Ecommerce Businesses Need a Blog in 2020.
+                Document Your Ecommerce Blog Strategy Publication: How to Create
+                High-Performing Blog Content Distribution:...
+                <a href="#">+ Read More</a>
+              </p>
+              <div class="card-avatar">
+                <img
+                  src="./images/b1c37d9c6b3a36a5eb64d7112bf71ca4.jpeg"
+                  alt="avatar image"
+                />
+                <p>Shauna Ward</p>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
+        <div class="col mb-5">
+          <div class="card">
+            <img
+              src="./images/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+              class="card-img-top"
+              alt="blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                What Is Licensed Content and How Does It Help Your Business
+                Grow?
+              </h5>
+              <div class="card-tags">
+                <strong class="category">Performance Blogging</strong>
+                <strong class="read-time"> • 21 mins read</strong>
+              </div>
+              <p class="card-text">
+                TL;DR: Licensed content, sometimes called syndicated content, is
+                content produced by a professional publisher that can be legally
+                licensed for...
+                <a href="#">+ Read More</a>
+              </p>
+              <div class="card-avatar">
+                <img
+                  src="./images/c2f0381c76fae0875a4c15deb4e0a2f8.jpeg"
+                  alt="avatar image"
+                />
+                <p>Rob Glover</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <div class="home-people"></div>
+    <div class="try-it-now">
+      <h2 class="title">Try Matcha free for 7 days</h2>
+      <form action="" class="form" role="tab">
+        <input type="email" class="input" placeholder="Enter email address" />
+        <button type="submit" class="button">Sign Up Free &rarr;</button>
+      </form>
+
+      <p class="promotional-text">
+        Start publishing today with a
+        <strong>free 7-day trial.</strong>
+        <br />
+        <strong>No credit card </strong>
+        required.
+      </p>
+    </div>
+    <section class="container-cta">
+      <div class="inner-container">
+        <div class="left-cta">
+          <h3 class="title">
+            Try free for 7 day. <br />
+            Publish yout first article today!
+          </h3>
+          <p>Want to learn more? <a href="#">Schedule a demo &rarr;</a></p>
+        </div>
+        <div class="right-cta">
+          <form action="" class="form" role="tab">
+            <input
+              type="email"
+              class="input"
+              placeholder="Enter email address"
+            />
+            <button type="submit" class="button">Sign Up Free &rarr;</button>
+          </form>
+
+          <p class="promotional-text">
+            Start publishing today with a
+            <strong>free 7-day trial.</strong>
+            <br />
+            <strong>No credit card </strong>
+            required.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- BOOTSTRAP JAVASCRIPT CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

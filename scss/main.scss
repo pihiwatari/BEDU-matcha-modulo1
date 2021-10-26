@@ -1,0 +1,170 @@
+//imports
+@use "_global.scss" as *;
+
+.blog {
+  max-width: unset;
+  padding: 5% 10%;
+  background-color: #fff;
+
+  .title {
+    @extend %base-title;
+  }
+
+  .process-list {
+    margin: 40px 0 36px;
+
+    .process {
+      display: flex;
+      margin-bottom: 25px;
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+      }
+
+      .process-description {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+        }
+
+        & > p {
+          color: $dark-green-text;
+        }
+      }
+    }
+  }
+
+  button {
+    width: 180px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: $dark-green-title;
+    color: $white;
+  }
+
+  .card {
+    border-radius: 5px 5px 0 0;
+
+    .card-img-top {
+      border-radius: 5px 5px 0 0;
+    }
+
+    .card-body {
+      padding: 20px;
+
+      .card-title {
+        margin-bottom: 12px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        color: unset;
+      }
+
+      .card-tags {
+        margin-bottom: 12px;
+        font-size: 14px;
+
+        .category {
+          color: $matcha-lightgreen;
+        }
+
+        .read-time {
+          color: $gray;
+        }
+      }
+
+      .card-text {
+        margin-bottom: 12px;
+        color: $dark-gray;
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      .card-avatar {
+        display: flex;
+        align-items: center;
+
+        & > img {
+          width: 40px;
+          height: 40px;
+          margin-right: 12px;
+          border-radius: 50%;
+        }
+
+        & > p {
+          margin-bottom: 0;
+          font-weight: 600;
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}
+
+.home-people {
+  background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png);
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  height: 350px;
+}
+
+.try-it-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: -30px;
+  background-color: #96d178;
+
+  p {
+    text-align: center;
+    color: $white;
+  }
+}
+
+.container-cta {
+  padding: 5% 10%;
+
+  .inner-container {
+    display: flex;
+    padding: 5%;
+    border-radius: 10px;
+    color: #fff;
+    background-color: $dark-green-text;
+
+    .left-cta {
+      .title {
+        font-size: 34px;
+        color: #fff;
+      }
+
+      & > p > a {
+        color: #96d178;
+      }
+    }
+
+    .right-cta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .form {
+        margin-block-end: 20px;
+        button {
+          background-color: #96d178;
+        }
+      }
+
+      .promotional-text {
+        font-weight: 300;
+        color: white;
+      }
+    }
+  }
+}
