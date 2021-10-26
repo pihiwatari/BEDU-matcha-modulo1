@@ -87,4 +87,58 @@
   color: #4a4a4a;
 }
 
+.home-people {
+  background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/css/../img/home_people.png);
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  height: 350px;
+}
+
+.try-it-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: -30px;
+  background-color: #96d178;
+}
+.try-it-now p {
+  text-align: center;
+  color: #fff;
+}
+
+.container-cta {
+  padding: 5% 10%;
+}
+.container-cta .inner-container {
+  display: flex;
+  padding: 5%;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #135359;
+}
+.container-cta .inner-container .left-cta .title {
+  font-size: 34px;
+  color: #fff;
+}
+.container-cta .inner-container .left-cta > p > a {
+  color: #96d178;
+}
+.container-cta .inner-container .right-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-cta .inner-container .right-cta .form {
+  margin-block-end: 20px;
+}
+.container-cta .inner-container .right-cta .form button {
+  background-color: #96d178;
+}
+.container-cta .inner-container .right-cta .promotional-text {
+  font-weight: 300;
+  color: white;
+}
+
 /*# sourceMappingURL=output.css.map */
